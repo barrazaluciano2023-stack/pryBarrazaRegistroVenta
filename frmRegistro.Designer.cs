@@ -36,6 +36,7 @@
             lblPrecio = new Label();
             txtCantidad = new TextBox();
             lblCantidad = new Label();
+            btnCancelar = new Button();
             btnRegistrar = new Button();
             SuspendLayout();
             // 
@@ -47,14 +48,17 @@
             dtpFecha.Name = "dtpFecha";
             dtpFecha.Size = new Size(137, 31);
             dtpFecha.TabIndex = 0;
+            dtpFecha.ValueChanged += dtpFecha_ValueChanged;
             // 
             // txtPrecio
             // 
+            txtPrecio.Enabled = false;
             txtPrecio.Font = new Font("Microsoft Sans Serif", 15.75F);
             txtPrecio.Location = new Point(295, 208);
             txtPrecio.Name = "txtPrecio";
             txtPrecio.Size = new Size(137, 31);
             txtPrecio.TabIndex = 1;
+            txtPrecio.TextChanged += txtPrecio_TextChanged;
             // 
             // txtProducto
             // 
@@ -63,6 +67,7 @@
             txtProducto.Name = "txtProducto";
             txtProducto.Size = new Size(137, 31);
             txtProducto.TabIndex = 2;
+            txtProducto.TextChanged += txtProducto_TextChanged;
             // 
             // lblfecha
             // 
@@ -96,11 +101,13 @@
             // 
             // txtCantidad
             // 
+            txtCantidad.Enabled = false;
             txtCantidad.Font = new Font("Microsoft Sans Serif", 15.75F);
             txtCantidad.Location = new Point(295, 167);
             txtCantidad.Name = "txtCantidad";
             txtCantidad.Size = new Size(137, 31);
             txtCantidad.TabIndex = 6;
+            txtCantidad.TextChanged += txtCantidad_TextChanged;
             // 
             // lblCantidad
             // 
@@ -112,15 +119,29 @@
             lblCantidad.TabIndex = 7;
             lblCantidad.Text = "Cantidad";
             // 
+            // btnCancelar
+            // 
+            btnCancelar.BackColor = SystemColors.ControlDark;
+            btnCancelar.Location = new Point(200, 296);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(100, 25);
+            btnCancelar.TabIndex = 8;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = false;
+            btnCancelar.Click += btnCancelar_Click;
+            // 
             // btnRegistrar
             // 
             btnRegistrar.BackColor = SystemColors.ControlDark;
-            btnRegistrar.Location = new Point(295, 291);
+            btnRegistrar.Enabled = false;
+            btnRegistrar.Location = new Point(330, 296);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(100, 25);
-            btnRegistrar.TabIndex = 8;
+            btnRegistrar.TabIndex = 9;
             btnRegistrar.Text = "Registrar";
             btnRegistrar.UseVisualStyleBackColor = false;
+            btnRegistrar.TextChanged += Principal_Load;
+            btnRegistrar.Click += btnRegistrar_Click;
             // 
             // frmRegistro
             // 
@@ -129,6 +150,7 @@
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(btnRegistrar);
+            Controls.Add(btnCancelar);
             Controls.Add(lblCantidad);
             Controls.Add(txtCantidad);
             Controls.Add(lblPrecio);
@@ -153,7 +175,9 @@
         private Label lblPrecio;
         private TextBox txtCantidad;
         private Label lblCantidad;
-        private Button btnRegistrar;
+        private Button btnCancelar;
         internal DateTimePicker dtpFecha;
+        private Button button1;
+        private Button btnRegistrar;
     }
 }
