@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryBarrazaRegistroVenta
 {
-    public partial class Principal : Form
+    public partial class frmRegistro : Form
     {
-        public Principal()
+        public frmRegistro()
         {
             InitializeComponent();
         }

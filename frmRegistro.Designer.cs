@@ -1,6 +1,6 @@
 ﻿namespace pryBarrazaRegistroVenta
 {
-    partial class Principal
+    partial class frmRegistro
     {
         /// <summary>
         /// Required designer variable.
@@ -41,26 +41,27 @@
             // 
             // dtpFecha
             // 
-            dtpFecha.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dtpFecha.Font = new Font("Microsoft Sans Serif", 15.75F);
+            dtpFecha.Format = DateTimePickerFormat.Short;
             dtpFecha.Location = new Point(295, 81);
             dtpFecha.Name = "dtpFecha";
-            dtpFecha.Size = new Size(309, 29);
+            dtpFecha.Size = new Size(137, 31);
             dtpFecha.TabIndex = 0;
             // 
             // txtPrecio
             // 
-            txtPrecio.Font = new Font("Segoe UI", 15.75F);
+            txtPrecio.Font = new Font("Microsoft Sans Serif", 15.75F);
             txtPrecio.Location = new Point(295, 208);
             txtPrecio.Name = "txtPrecio";
-            txtPrecio.Size = new Size(100, 35);
+            txtPrecio.Size = new Size(137, 31);
             txtPrecio.TabIndex = 1;
             // 
             // txtProducto
             // 
-            txtProducto.Font = new Font("Segoe UI", 15.75F);
+            txtProducto.Font = new Font("Microsoft Sans Serif", 15.75F);
             txtProducto.Location = new Point(295, 120);
             txtProducto.Name = "txtProducto";
-            txtProducto.Size = new Size(100, 35);
+            txtProducto.Size = new Size(137, 31);
             txtProducto.TabIndex = 2;
             // 
             // lblfecha
@@ -95,10 +96,10 @@
             // 
             // txtCantidad
             // 
-            txtCantidad.Font = new Font("Segoe UI", 15.75F);
+            txtCantidad.Font = new Font("Microsoft Sans Serif", 15.75F);
             txtCantidad.Location = new Point(295, 167);
             txtCantidad.Name = "txtCantidad";
-            txtCantidad.Size = new Size(100, 35);
+            txtCantidad.Size = new Size(137, 31);
             txtCantidad.TabIndex = 6;
             // 
             // lblCantidad
@@ -121,7 +122,7 @@
             btnRegistrar.Text = "Registrar";
             btnRegistrar.UseVisualStyleBackColor = false;
             // 
-            // Principal
+            // frmRegistro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -136,7 +137,7 @@
             Controls.Add(txtProducto);
             Controls.Add(txtPrecio);
             Controls.Add(dtpFecha);
-            Name = "Principal";
+            Name = "frmRegistro";
             Tag = "";
             Text = "Principal";
             Load += Principal_Load;
@@ -145,8 +146,6 @@
         }
 
         #endregion
-
-        private DateTimePicker dtpFecha;
         private TextBox txtPrecio;
         private TextBox txtProducto;
         private Label lblfecha;
@@ -155,5 +154,6 @@
         private TextBox txtCantidad;
         private Label lblCantidad;
         private Button btnRegistrar;
+        internal DateTimePicker dtpFecha;
     }
 }
