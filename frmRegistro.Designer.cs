@@ -30,7 +30,6 @@
         {
             dtpFecha = new DateTimePicker();
             txtPrecio = new TextBox();
-            txtProducto = new TextBox();
             lblfecha = new Label();
             lblProducto = new Label();
             lblPrecio = new Label();
@@ -38,6 +37,8 @@
             lblCantidad = new Label();
             btnCancelar = new Button();
             btnRegistrar = new Button();
+            cmbProducto = new ComboBox();
+            lblRegistro = new Label();
             SuspendLayout();
             // 
             // dtpFecha
@@ -59,15 +60,6 @@
             txtPrecio.Size = new Size(137, 31);
             txtPrecio.TabIndex = 1;
             txtPrecio.TextChanged += txtPrecio_TextChanged;
-            // 
-            // txtProducto
-            // 
-            txtProducto.Font = new Font("Microsoft Sans Serif", 15.75F);
-            txtProducto.Location = new Point(295, 120);
-            txtProducto.Name = "txtProducto";
-            txtProducto.Size = new Size(137, 31);
-            txtProducto.TabIndex = 2;
-            txtProducto.TextChanged += txtProducto_TextChanged;
             // 
             // lblfecha
             // 
@@ -143,12 +135,33 @@
             btnRegistrar.TextChanged += Principal_Load;
             btnRegistrar.Click += btnRegistrar_Click;
             // 
+            // cmbProducto
+            // 
+            cmbProducto.FormattingEnabled = true;
+            cmbProducto.Location = new Point(295, 130);
+            cmbProducto.Name = "cmbProducto";
+            cmbProducto.Size = new Size(138, 23);
+            cmbProducto.TabIndex = 11;
+            cmbProducto.SelectedIndexChanged += txtProducto_SelectedIndexChanged;
+            // 
+            // lblRegistro
+            // 
+            lblRegistro.BackColor = SystemColors.ControlLightLight;
+            lblRegistro.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRegistro.ForeColor = SystemColors.ActiveCaptionText;
+            lblRegistro.Location = new Point(170, 362);
+            lblRegistro.Name = "lblRegistro";
+            lblRegistro.Size = new Size(248, 59);
+            lblRegistro.TabIndex = 12;
+            // 
             // frmRegistro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblRegistro);
+            Controls.Add(cmbProducto);
             Controls.Add(btnRegistrar);
             Controls.Add(btnCancelar);
             Controls.Add(lblCantidad);
@@ -156,7 +169,6 @@
             Controls.Add(lblPrecio);
             Controls.Add(lblProducto);
             Controls.Add(lblfecha);
-            Controls.Add(txtProducto);
             Controls.Add(txtPrecio);
             Controls.Add(dtpFecha);
             Name = "frmRegistro";
@@ -169,7 +181,6 @@
 
         #endregion
         private TextBox txtPrecio;
-        private TextBox txtProducto;
         private Label lblfecha;
         private Label lblProducto;
         private Label lblPrecio;
@@ -179,5 +190,7 @@
         internal DateTimePicker dtpFecha;
         private Button button1;
         private Button btnRegistrar;
+        private ComboBox cmbProducto;
+        private Label lblRegistro;
     }
 }
