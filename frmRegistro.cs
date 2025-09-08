@@ -91,7 +91,7 @@ namespace pryBarrazaRegistroVenta
             cmbProducto.SelectedIndex = -1;
             txtCantidad.Text = "";
             txtPrecio.Text = "";
-
+            
             cmbProducto.Focus();
         }
 

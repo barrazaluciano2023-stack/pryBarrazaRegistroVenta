@@ -43,80 +43,81 @@
             // 
             // dtpFecha
             // 
-            dtpFecha.Font = new Font("Microsoft Sans Serif", 15.75F);
+            dtpFecha.Font = new Font("Segoe UI", 12F);
             dtpFecha.Format = DateTimePickerFormat.Short;
-            dtpFecha.Location = new Point(295, 81);
+            dtpFecha.Location = new Point(256, 27);
             dtpFecha.Name = "dtpFecha";
-            dtpFecha.Size = new Size(137, 31);
+            dtpFecha.Size = new Size(246, 29);
             dtpFecha.TabIndex = 0;
             dtpFecha.ValueChanged += dtpFecha_ValueChanged;
             // 
             // txtPrecio
             // 
             txtPrecio.Enabled = false;
-            txtPrecio.Font = new Font("Microsoft Sans Serif", 15.75F);
-            txtPrecio.Location = new Point(295, 208);
+            txtPrecio.Font = new Font("Segoe UI", 12F);
+            txtPrecio.Location = new Point(256, 154);
             txtPrecio.Name = "txtPrecio";
-            txtPrecio.Size = new Size(137, 31);
+            txtPrecio.Size = new Size(246, 29);
             txtPrecio.TabIndex = 1;
             txtPrecio.TextChanged += txtPrecio_TextChanged;
             // 
             // lblfecha
             // 
             lblfecha.AutoSize = true;
-            lblfecha.Font = new Font("Segoe UI", 15.75F);
-            lblfecha.Location = new Point(118, 87);
+            lblfecha.Font = new Font("Segoe UI", 12F);
+            lblfecha.Location = new Point(63, 27);
             lblfecha.Name = "lblfecha";
-            lblfecha.Size = new Size(67, 30);
+            lblfecha.Size = new Size(50, 21);
             lblfecha.TabIndex = 3;
             lblfecha.Text = "Fecha";
             // 
             // lblProducto
             // 
             lblProducto.AutoSize = true;
-            lblProducto.Font = new Font("Segoe UI", 15.75F);
-            lblProducto.Location = new Point(118, 126);
+            lblProducto.Font = new Font("Segoe UI", 12F);
+            lblProducto.Location = new Point(63, 66);
             lblProducto.Name = "lblProducto";
-            lblProducto.Size = new Size(97, 30);
+            lblProducto.Size = new Size(73, 21);
             lblProducto.TabIndex = 4;
             lblProducto.Text = "Producto";
             // 
             // lblPrecio
             // 
             lblPrecio.AutoSize = true;
-            lblPrecio.Font = new Font("Segoe UI", 15.75F);
-            lblPrecio.Location = new Point(118, 214);
+            lblPrecio.Font = new Font("Segoe UI", 12F);
+            lblPrecio.Location = new Point(63, 154);
             lblPrecio.Name = "lblPrecio";
-            lblPrecio.Size = new Size(149, 30);
+            lblPrecio.Size = new Size(113, 21);
             lblPrecio.TabIndex = 5;
             lblPrecio.Text = "Precio Unitario";
             // 
             // txtCantidad
             // 
             txtCantidad.Enabled = false;
-            txtCantidad.Font = new Font("Microsoft Sans Serif", 15.75F);
-            txtCantidad.Location = new Point(295, 167);
+            txtCantidad.Font = new Font("Segoe UI", 12F);
+            txtCantidad.Location = new Point(256, 113);
             txtCantidad.Name = "txtCantidad";
-            txtCantidad.Size = new Size(137, 31);
+            txtCantidad.Size = new Size(246, 29);
             txtCantidad.TabIndex = 6;
             txtCantidad.TextChanged += txtCantidad_TextChanged;
             // 
             // lblCantidad
             // 
             lblCantidad.AutoSize = true;
-            lblCantidad.Font = new Font("Segoe UI", 15.75F);
-            lblCantidad.Location = new Point(118, 173);
+            lblCantidad.Font = new Font("Segoe UI", 12F);
+            lblCantidad.Location = new Point(63, 113);
             lblCantidad.Name = "lblCantidad";
-            lblCantidad.Size = new Size(96, 30);
+            lblCantidad.Size = new Size(72, 21);
             lblCantidad.TabIndex = 7;
             lblCantidad.Text = "Cantidad";
             // 
             // btnCancelar
             // 
             btnCancelar.BackColor = SystemColors.ControlDark;
-            btnCancelar.Location = new Point(200, 296);
+            btnCancelar.Font = new Font("Segoe UI", 12F);
+            btnCancelar.Location = new Point(156, 246);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(100, 25);
+            btnCancelar.Size = new Size(100, 31);
             btnCancelar.TabIndex = 8;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
@@ -126,9 +127,10 @@
             // 
             btnRegistrar.BackColor = SystemColors.ControlDark;
             btnRegistrar.Enabled = false;
-            btnRegistrar.Location = new Point(330, 296);
+            btnRegistrar.Font = new Font("Segoe UI", 12F);
+            btnRegistrar.Location = new Point(286, 246);
             btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(100, 25);
+            btnRegistrar.Size = new Size(100, 31);
             btnRegistrar.TabIndex = 9;
             btnRegistrar.Text = "Registrar";
             btnRegistrar.UseVisualStyleBackColor = false;
@@ -137,21 +139,22 @@
             // 
             // cmbProducto
             // 
+            cmbProducto.Font = new Font("Segoe UI", 12F);
             cmbProducto.FormattingEnabled = true;
-            cmbProducto.Location = new Point(295, 130);
+            cmbProducto.Location = new Point(256, 76);
             cmbProducto.Name = "cmbProducto";
-            cmbProducto.Size = new Size(138, 23);
+            cmbProducto.Size = new Size(247, 29);
             cmbProducto.TabIndex = 11;
             cmbProducto.SelectedIndexChanged += txtProducto_SelectedIndexChanged;
             // 
             // lblRegistro
             // 
             lblRegistro.BackColor = SystemColors.ControlLightLight;
-            lblRegistro.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRegistro.Font = new Font("Segoe UI", 12F);
             lblRegistro.ForeColor = SystemColors.ActiveCaptionText;
-            lblRegistro.Location = new Point(170, 362);
+            lblRegistro.Location = new Point(100, 342);
             lblRegistro.Name = "lblRegistro";
-            lblRegistro.Size = new Size(248, 59);
+            lblRegistro.Size = new Size(391, 78);
             lblRegistro.TabIndex = 12;
             // 
             // frmRegistro
